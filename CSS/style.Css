@@ -6,13 +6,13 @@
     --gris-fonce:#666;
     --grs-tres-clair:#F8F8F8;
     --gris-clair:#EEE;
-}
+ }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+ }
 
  body {
     background-color: var(--grs-tres-clair);
@@ -84,7 +84,7 @@
  a.active::after {
   width: 100%;
  }
- section.hero {
+ .hero {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,7 +93,7 @@
   margin: 10rem 2rem;
  }
 
- section.hero img {
+ .hero img {
   width: 300px;
   height: 300px;
   object-fit: cover;
@@ -102,20 +102,20 @@
 
  }
 
- section.hero h1 {
+ .hero h1 {
   color: var(--violet-fonce);
   font-size: 4rem;
   font-weight: 700;
   margin-bottom: 1.2rem;
  }
 
- section.hero p {
+ .hero p {
   color: var(--gris-fonce);
   font-size: 1.3rem;
   margin-bottom: 1.2rem;
  }
 
- section.hero a {
+ .hero a {
   text-decoration: none;
   display: inline-block;
   background-color: var(--violet-doux);
@@ -130,12 +130,12 @@
 
  }
 
- section.hero a:hover {
+ .hero a:hover {
   background-color: var(--violet-fonce);
   transform: translateY(-3px);
  }
 
- section.apropos {
+ .apropos {
   width: 800px;
   margin: 6rem auto;
   text-align: center;
@@ -159,16 +159,74 @@
   border-radius: 2px;
  }
 
- section.apropos p {
+ .apropos p {
   margin-bottom: 2rem;
   color: var(--gris-tres-fonce);
-  font-size: 1.3rem;
+  font-size: 1.2rem;
  }
 
- 
- 
+ .competences table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #FFF;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.00);
+  border-radius: 10px;
+  overflow: hidden;
+ }
 
+ .competences table th, .competences table td {
+  padding: 15px;
+ }
+
+ .competences table thead {
+  background-color: var(--violet-doux);
+  color: #FFF;
+  text-transform: uppercase;
+ }
+
+ .competences table tbody td {
+  border-bottom: 1px solid var(--grs-tres-clair);
+ }
+
+ .competences table tbody tr {
+  transition: background-color 0.3s ease;
+ }
  
+.competences table tbody tr:hover {
+  background-color: #F0F0F0;
+
+}
+
+.competences table thead th {
+  text-align: left;
+}
+
+footer {
+  margin-top: 3rem;
+  background-color: var(--violet-doux);
+  padding: 3rem 0;
+  text-align: center;
+
+}
+
+footer p {
+  color: white;
+  margin-bottom: 1.2rem;
+}
+
+footer a {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: white;
+  margin: 0 10px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+ 
+footer a:hover {
+  color: var(--orange-vif);
+  transform: translateY(-3px);
+}
  
  
 

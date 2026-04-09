@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="Contact.Css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.Css">
@@ -26,7 +27,41 @@
 </nav>
     </header>
     <main>
-        <h1>contactez-nous</h1>
+        <main class="contact-container">
+    <section class="contact-info">
+        <h1>Contactez-moi</h1>
+        <p>Vous avez un projet en tête ou une question ? N'hésitez pas à me joindre.</p>
+        
+        <div class="info-details">
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Lubumbashi, RDC</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone-alt"></i>
+                <span>+243 971 067 554</span>
+            </div>
+            <div class="social-fast">
+                <a href="https://wa.me/243971067554" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="https://t.me/ketsia_kashala" target="_blank" title="Telegram"><i class="fab fa-telegram"></i> Telegram</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <form action="#">
+            <div class="form-group">
+                <label for="name">Nom complet</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="phone" placeholder="+243..." required>
+            </div>
+            <button type="submit" class="btn-submit">Envoyer le message</button>
+        </form>
+    </section>
+</main>
     </main>
     <footer>
         <p>&copy; 2026 Ketsia, Tous droits réservés</p>

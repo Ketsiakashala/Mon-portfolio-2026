@@ -189,6 +189,10 @@
   border-bottom: 1px solid var(--grs-tres-clair);
  }
 
+ .competences tbody tr:nth-child(even) {
+  background-color: #fdfdfd;
+ }
+
  .competences table tbody tr {
   transition: background-color 0.3s ease;
  }
@@ -228,5 +232,3 @@ footer a:hover {
   transform: translateY(-3px);
 }
  
- 
-

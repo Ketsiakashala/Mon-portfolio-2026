@@ -1,0 +1,130 @@
+:root {
+    --violet-principal: #6c63ff; /* Couleur violette de l'image */
+    --violet-foncé: #534edd;
+    --gris-tres-fonce: #333;
+    --gris-fonce: #666;
+    --gris-clair: #eee;
+    --bg-section: #f8f8f8;
+}
+
+.projets {
+    padding: 80px 20px;
+    background-color: var(--bg-section);
+    text-align: center;
+}
+
+.projets h2 {
+    font-size: 2.5rem;
+    color: var(--violet-principal);
+    margin-bottom: 50px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Barre sous le titre "Mes Réalisations" */
+.projets h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: var(--violet-principal);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Grille de 3 colonnes */
+.Project {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Style des cartes */
+.project-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Gestion de l'image pour qu'elle soit uniforme */
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 3px solid var(--violet-principal);
+}
+
+.project-card h3 {
+    padding: 20px 20px 5px;
+    color: var(--violet-principal);
+    font-size: 1.3rem;
+}
+
+.project-card p {
+    padding: 0 20px 15px;
+    color: var(--gris-fonce);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+/* Style des badges technologiques */
+.tech {
+    padding: 0 20px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tech button {
+    border: none;
+    background: #f0efff;
+    color: var(--violet-principal);
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Liens en bas de carte */
+.links {
+    padding: 15px 20px;
+    border-top: 1px solid var(--gris-clair);
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--gris-tres-fonce);
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.links a:hover {
+    color: var(--violet-principal);
+}
+
+/* Responsive pour tablettes et mobiles */
+@media (max-width: 992px) {
+    .Project { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 650px) {
+    .Project { grid-template-columns: 1fr; }
+    .projets h2 { font-size: 2rem; }
+}

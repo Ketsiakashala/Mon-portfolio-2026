@@ -1,51 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/style.Css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mon portfolio - Divertissement</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="CSS/Divertissement.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+    
     <header>
-<div>
-    <a href="">Mon portfolio</a>
-</div>
-<nav>
-    <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="projets.html">Projets</a></li>
-        <li><a href="passions.html">Passions</a></li>
-        <li><a href="divertissement.html"class="active">Divertissement</a></li>
-        <li><a href="contact.html">contact</a></li>
-    </ul>
-</nav>
+        <div class="logo">
+            <a href="index.html">Mon Portfolio</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="Projets.html">Projet</a></li>
+                <li><a href="Passions.html">Passions</a></li>
+                <li><a href="Divertissement.html" class="active">Divertissement</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-        <h1>voici mes divertissements</h1>
-    </main>
+    <section class="entertainment-container">
+       <div class="section-header">
+    <h2>Divertissement & Équilibre</h2>
+    <div class="separator"></div> </div>
+            <p>Une sélection de mes centres d'intérêt qui nourrissent ma créativité et ma curiosité intellectuelle.</p>
+        </div>
+
+        <div class="portfolio-grid">
+            <div class="grid-card">
+                <img src="image/gaming.jpg" alt="E-sport et Stratégie">
+                <div class="card-overlay">
+                    <div class="overlay-text">
+                        <span>Technologie</span>
+                        <h3>E-sport & Stratégie</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-card">
+                <img src="image/musique.jpg" alt="Production Musicale">
+                <div class="card-overlay">
+                    <div class="overlay-text">
+                        <span>Créativité</span>
+                        <h3>Production & Rythme</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-card">
+                <img src="image/cinema.jpg" alt="Septième Art">
+                <div class="card-overlay">
+                    <div class="overlay-text">
+                        <span>Culture</span>
+                        <h3>Analyse Cinématographique</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-card">
+                <img src="image/voyage.jpg" alt="Exploration">
+                <div class="card-overlay">
+                    <div class="overlay-text">
+                        <span>Inspiration</span>
+                        <h3>Photographie de Voyage</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
     <footer>
-        <p>&copy; 2026 Ketsia, Tous droits réservés</p>
-        <a href="linkedin"><i class="fa-brands fa-linkedin"></i></i></a>
-        <a href="github"><i class="fa-brands fa-github"></i></a>
-        <a href="X.Code"><i class="fa-brands fa-x-twitter"></i></i></a>
-            
-    </footer> 
-    </body>
-    </html>
+        <p>&copy; 2026 Ketsia. Tous droits réservés.</p>
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </footer>
 
-
-
-                
-                
-
-        
-            
-            
-
-            
-              
+</body>
+</html>

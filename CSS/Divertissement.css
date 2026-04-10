@@ -1,0 +1,119 @@
+/* --- Mise en page Pro --- */
+.entertainment-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+/* --- En-tête de la section --- */
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.section-header h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #7d73ff;          /* Le violet de ton image */
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+    margin-bottom: 15px;     /* Espace entre le texte et la barre unique */
+    border: none;            /* On force la suppression de toute bordure automatique */
+}
+
+/* --- La barre unique --- */
+.separator {
+    width: 60px;             /* Longueur de la barre */
+    height: 4px;             /* Épaisseur de la barre */
+    background-color: #7d73ff; 
+    border-radius: 10px;     /* Pour des bords arrondis et lisses */
+    margin: 0 auto;          /* Centre la barre horizontalement */
+}
+/* Optionnel : Si tu veux aussi que l'overlay des cartes utilise cette couleur au survol */
+.grid-card:hover .card-overlay {
+    background: linear-gradient(to top, rgba(125, 115, 255, 0.7) 0%, rgba(0,0,0,0.2) 100%);
+}
+
+/* --- Grille Professionnelle --- */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes par ligne */
+    gap: 25px;
+}
+
+.grid-card {
+    position: relative;
+    height: 350px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    background: #000;
+}
+
+.grid-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.4s;
+    opacity: 0.85;
+}
+
+/* --- Overlay Sophistiqué --- */
+.card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 60%);
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+    transition: background 0.4s;
+}
+
+.overlay-text span {
+    color: #6a5acd;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 5px;
+    transform: translateY(20px);
+    transition: transform 0.4s ease;
+}
+
+.overlay-text h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transform: translateY(20px);
+    transition: transform 0.4s ease 0.1s;
+}
+
+/* --- Interactions Hover --- */
+.grid-card:hover img {
+    transform: scale(1.05);
+    opacity: 0.6;
+}
+
+.grid-card:hover .card-overlay {
+    background: linear-gradient(to top, rgba(106, 90, 205, 0.6) 0%, rgba(0,0,0,0.2) 100%);
+}
+
+.grid-card:hover .overlay-text span, 
+.grid-card:hover .overlay-text h3 {
+    transform: translateY(0);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr; /* 1 colonne sur tablette/mobile */
+    }
+    .grid-card {
+        height: 250px;
+    }
+}

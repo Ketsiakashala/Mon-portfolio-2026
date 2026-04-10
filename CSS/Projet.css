@@ -1,10 +1,10 @@
 :root {
-    --violet-principal: #6c63ff; /* Couleur violette de l'image */
+    --violet-doux: #6c63ff; /* Couleur violette de l'image */
     --violet-foncé: #534edd;
     --gris-tres-fonce: #333;
     --gris-fonce: #666;
     --gris-clair: #eee;
-    --bg-section: #f8f8f8;
+    --gris-tres-clair: #f8f8f8;
 }
 
 .projets {
@@ -15,7 +15,7 @@
 
 .projets h2 {
     font-size: 2.5rem;
-    color: var(--violet-principal);
+    color: var(--violet-doux);
     margin-bottom: 50px;
     position: relative;
     display: inline-block;
@@ -27,7 +27,7 @@
     display: block;
     width: 50px;
     height: 4px;
-    background-color: var(--violet-principal);
+    background-color: var(--violet-doux);
     margin: 10px auto 0;
     border-radius: 2px;
 }
@@ -62,12 +62,12 @@
     width: 100%;
     height: 180px;
     object-fit: cover;
-    border-bottom: 3px solid var(--violet-principal);
+    border-bottom: 3px solid var(--violet-doux);
 }
 
 .project-card h3 {
     padding: 20px 20px 5px;
-    color: var(--violet-principal);
+    color: var(--violet-doux);
     font-size: 1.3rem;
 }
 
@@ -90,7 +90,7 @@
 .tech button {
     border: none;
     background: #f0efff;
-    color: var(--violet-principal);
+    color: var(--violet-doux);
     padding: 4px 12px;
     border-radius: 15px;
     font-size: 0.8rem;
@@ -116,7 +116,7 @@
 }
 
 .links a:hover {
-    color: var(--violet-principal);
+    color: var(--violet-doux);
 }
 
 /* Responsive pour tablettes et mobiles */
